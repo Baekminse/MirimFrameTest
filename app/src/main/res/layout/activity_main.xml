@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -12,16 +13,20 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
+        android:layout_marginBottom="10dp"
         >
     <Button
+        android:id="@+id/btn_pack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="박세리"/>
         <Button
+            android:id="@+id/btn_son"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="손예진"/>
         <Button
+            android:id="@+id/btn_an"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="안현모"/>
@@ -31,32 +36,45 @@
         android:layout_height="match_parent"
         android:background="#ffff00"
         >
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:src="@drawable/pack"
-            />
         <LinearLayout
+            android:id="@+id/Linear_park"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/pack"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Linear_son"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            />
-        <ImageView
+            android:visibility="invisible"
+            >
+            <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:src="@drawable/son"
             />
+        </LinearLayout>
+
         <LinearLayout
+            android:id="@+id/Linear_an"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            />
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:src="@drawable/an"
-            />
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/an"
+                />
+        </LinearLayout>
+
 
 
 
